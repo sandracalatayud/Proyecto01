@@ -5,6 +5,8 @@
 
 package proyecto01;
 
+import java.util.Objects;
+
 /**
  * 
  * @author Sandra Calatayud <scmct93 at gmail.com>
@@ -25,6 +27,21 @@ public class Book {
     private String sinopsis;
     
     /* CONSTRUCTORES */
+
+    public Book() {
+    }
+
+    public Book(String title_original, String subtitle, String author, String place_original_publishing, String date_original_publishing, String original_languaje, String series, Integer num_series, String sinopsis) {
+        this.title_original = title_original;
+        this.subtitle = subtitle;
+        this.author = author;
+        this.place_original_publishing = place_original_publishing;
+        this.date_original_publishing = date_original_publishing;
+        this.original_languaje = original_languaje;
+        this.series = series;
+        this.num_series = num_series;
+        this.sinopsis = sinopsis;
+    }
     
     
     
@@ -112,5 +129,74 @@ public class Book {
     private void setSinopsis(String sinopsis) {
         this.sinopsis = sinopsis;
     }
+    
+    /* HASHCODE Y EQUALS */
+
+    @Override
+    public int hashCode() {
+        int hash = 5;
+        hash = 61 * hash + Objects.hashCode(this.title_original);
+        hash = 61 * hash + Objects.hashCode(this.subtitle);
+        hash = 61 * hash + Objects.hashCode(this.author);
+        hash = 61 * hash + Objects.hashCode(this.place_original_publishing);
+        hash = 61 * hash + Objects.hashCode(this.date_original_publishing);
+        hash = 61 * hash + Objects.hashCode(this.original_languaje);
+        hash = 61 * hash + Objects.hashCode(this.series);
+        hash = 61 * hash + Objects.hashCode(this.num_series);
+        hash = 61 * hash + Objects.hashCode(this.sinopsis);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Book other = (Book) obj;
+        if (!Objects.equals(this.title_original, other.title_original)) {
+            return false;
+        }
+        if (!Objects.equals(this.subtitle, other.subtitle)) {
+            return false;
+        }
+        if (!Objects.equals(this.author, other.author)) {
+            return false;
+        }
+        if (!Objects.equals(this.place_original_publishing, other.place_original_publishing)) {
+            return false;
+        }
+        if (!Objects.equals(this.date_original_publishing, other.date_original_publishing)) {
+            return false;
+        }
+        if (!Objects.equals(this.original_languaje, other.original_languaje)) {
+            return false;
+        }
+        if (!Objects.equals(this.series, other.series)) {
+            return false;
+        }
+        if (!Objects.equals(this.sinopsis, other.sinopsis)) {
+            return false;
+        }
+        if (!Objects.equals(this.num_series, other.num_series)) {
+            return false;
+        }
+        return true;
+    }
+    
+    
+    /* TO STRING */
+
+    @Override
+    public String toString() {
+        return "Book{" + "title_original=" + title_original + ", subtitle=" + subtitle + ", author=" + author + ", place_original_publishing=" + place_original_publishing + ", date_original_publishing=" + date_original_publishing + ", original_languaje=" + original_languaje + ", series=" + series + ", num_series=" + num_series + ", sinopsis=" + sinopsis + '}';
+    }
+    
+    
         
 }
