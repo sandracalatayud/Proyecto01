@@ -1,3 +1,3 @@
 # Mi primer proyecto
 
-Proyecyo de prueba
+Proyecto de prueba
