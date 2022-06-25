@@ -11,8 +11,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1000.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="proyecto01.FXMLPrincipalController">
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proyecto01.FXMLPrincipalController">
    <children>
       <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="1000.0" AnchorPane.bottomAnchor="775.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <menus>
@@ -54,8 +53,8 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <CheckBox fx:id="cbFisico" mnemonicParsing="false" text="Físicos" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-            <CheckBox fx:id="cbElectronico" mnemonicParsing="false" text="Electrónicos" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <CheckBox fx:id="cbFisico" mnemonicParsing="false" text="Físico" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <CheckBox fx:id="cbElectronico" mnemonicParsing="false" text="Electrónico" GridPane.columnIndex="3" GridPane.rowIndex="2" />
             <CheckBox fx:id="cbPrestado" mnemonicParsing="false" text="Prestado" GridPane.columnIndex="2" GridPane.rowIndex="2" />
             <CheckBox fx:id="cbEnPrestamo" mnemonicParsing="false" text="En préstamo" GridPane.columnIndex="2" GridPane.rowIndex="1" />
             <CheckBox fx:id="cbVendido" mnemonicParsing="false" text="Vendido" GridPane.columnIndex="1" GridPane.rowIndex="1" />
@@ -72,6 +71,7 @@
       <ToolBar layoutX="15.0" layoutY="746.0" prefHeight="40.0" prefWidth="978.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
         <items>
           <Button fx:id="btAnadirLibro" mnemonicParsing="false" onAction="#AnadirLibro" text="Añadir libro" />
+            <Button mnemonicParsing="false" text="Borrar libro" />
         </items>
       </ToolBar>
       <Label layoutX="845.0" layoutY="56.0" text="Formato" textAlignment="RIGHT" AnchorPane.leftAnchor="525.0" AnchorPane.topAnchor="39.0">

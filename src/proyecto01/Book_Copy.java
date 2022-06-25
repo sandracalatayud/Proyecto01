@@ -21,8 +21,8 @@ public class Book_Copy extends Book_Edition {
     
     /* CONSTRUCTORES */
 
-    public Book_Copy(String bought_in, String gifted_by, String date_adquisition, String location, STATUS status, String borrow_to, String loaned_by, Integer pages, String plublisher, String place_publishing, String date_publishing, FORMAT format, String cover, String isbn, Integer edition, String colection, String language, Set<Reading> reading, String title_original, String subtitle, String author, String place_original_publishing, String date_original_publishing, String original_languaje, String series, Integer num_series, String sinopsis) {
-        super(pages, plublisher, place_publishing, date_publishing, format, cover, isbn, edition, colection, language, reading, title_original, subtitle, author, place_original_publishing, date_original_publishing, original_languaje, series, num_series, sinopsis);
+    public Book_Copy(String bought_in, String gifted_by, String date_adquisition, String location, STATUS status, String borrow_to, String loaned_by, String title, Integer pages, String plublisher, String country_publishing, String date_publishing, FORMAT format, String cover, String isbn, Integer edition, String colection, String language, String title_original, String subtitle, String author, String country_original_publishing, String date_original_publishing, String original_languaje, String series, Integer num_series, String sinopsis, AUTHOR_GENRE genre) {
+        super(title, pages, plublisher, country_publishing, date_publishing, format, cover, isbn, edition, colection, language, title_original, subtitle, author, country_original_publishing, date_original_publishing, original_languaje, series, num_series, sinopsis, genre);
         this.bought_in = bought_in;
         this.gifted_by = gifted_by;
         this.date_adquisition = date_adquisition;
@@ -31,6 +31,8 @@ public class Book_Copy extends Book_Edition {
         this.borrow_to = borrow_to;
         this.loaned_by = loaned_by;
     }
+
+    
 
     public Book_Copy() {
         super();
