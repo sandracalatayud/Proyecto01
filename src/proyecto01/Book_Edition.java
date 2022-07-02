@@ -13,8 +13,9 @@ public class Book_Edition extends Book {
     /* ATRIBUTOS */
     
     private String title;
+    private String subtitle;
     private Integer pages;
-    private String plublisher;
+    private String publisher;
     private String country_publishing;
     private String date_publishing;
     private FORMAT format;
@@ -30,11 +31,12 @@ public class Book_Edition extends Book {
         super ();
     }
 
-    public Book_Edition(String title, Integer pages, String plublisher, String country_publishing, String date_publishing, FORMAT format, String cover, String isbn, Integer edition, String colection, String language, String title_original, String subtitle, String author, String country_original_publishing, String date_original_publishing, String original_languaje, String series, Integer num_series, String sinopsis, AUTHOR_GENRE genre) {
-        super(title_original, subtitle, author, country_original_publishing, date_original_publishing, original_languaje, series, num_series, sinopsis, genre);
+    public Book_Edition(String title, String subtitle, Integer pages, String plublisher, String country_publishing, String date_publishing, FORMAT format, String cover, String isbn, Integer edition, String colection, String language, String title_original, String subtitle_original, String author, String country_original_publishing, String date_original_publishing, String original_languaje, String series, Integer num_series, String sinopsis, AUTHOR_GENRE genre) {
+        super(title_original, subtitle_original, author, country_original_publishing, date_original_publishing, original_languaje, series, num_series, sinopsis, genre);
         this.title = title;
+        this.subtitle = subtitle;
         this.pages = pages;
-        this.plublisher = plublisher;
+        this.publisher = plublisher;
         this.country_publishing = country_publishing;
         this.date_publishing = date_publishing;
         this.format = format;
@@ -45,6 +47,7 @@ public class Book_Edition extends Book {
         this.language = language;
     }
 
+    
     
     /* GETTERS AND SETTERS */
     
@@ -56,99 +59,108 @@ public class Book_Edition extends Book {
         this.title = title;
     }
 
-    private Integer getPages() {
+    public String getSubtitle() {
+        return subtitle;
+    }
+
+    public void setSubtitle(String subtitle) {
+        this.subtitle = subtitle;
+    }
+    
+
+    public Integer getPages() {
         return this.pages;
     }
     
-    private void setPages(Integer pages) {
+    public void setPages(Integer pages) {
         this.pages = pages;
     }
     
     
-    private String getPlublisher() {
-        return this.plublisher;
+    public String getPublisher() {
+        return this.publisher;
     }
     
     
-    private void setPlublisher(String plublisher) {
-        this.plublisher = plublisher;
+    public void setPublisher(String publisher) {
+        this.publisher = publisher;
     }
     
    
-    private String getCountry_publishing() {
+    public String getCountry_publishing() {
         return this.country_publishing;
     }
     
     
-    private void setCountry_publishing(String country_publishing) {
+    public void setCountry_publishing(String country_publishing) {
         this.country_publishing = country_publishing;
     }
     
     
-    private String getDate_publishing() {
+    public String getDate_publishing() {
         return this.date_publishing;
     }
     
 
-    private void setDate_publishing(String date_publishing) {
+    public void setDate_publishing(String date_publishing) {
         this.date_publishing = date_publishing;
     }
     
    
-    private FORMAT getFormat() {
+    public FORMAT getFormat() {
         return this.format;
     }
     
    
-    private void setFormat(FORMAT format) {
+    public void setFormat(FORMAT format) {
         this.format = format;
     }
     
     
-    private String getCover() {
+    public String getCover() {
         return this.cover;
     }
     
     
-    private void setCover(String cover) {
+    public void setCover(String cover) {
         this.cover = cover;
     }
     
     
-    private String getIsbn() {
+    public String getIsbn() {
         return this.isbn;
     }
     
     
-    private void setIsbn(String isbn) {
+    public void setIsbn(String isbn) {
         this.isbn = isbn;
     }
     
     
-    private Integer getEdition() {
+    public Integer getEdition() {
         return this.edition;
     }
     
-    private void setEdition(Integer edition) {
+    public void setEdition(Integer edition) {
         this.edition = edition;
     }
     
 
-    private String getColection() {
+    public String getColection() {
         return this.colection;
     }
     
-    private void setColection(String colection) {
+    public void setColection(String colection) {
         this.colection = colection;
     }
     
     
-    private String getLanguage() {
+    public String getLanguage() {
         return this.language;
     }
     
    
-    private void setLanguage(String language) {
+    public void setLanguage(String language) {
         this.language = language;
     }
     
@@ -157,18 +169,19 @@ public class Book_Edition extends Book {
 
     @Override
     public int hashCode() {
-        int hash = 7;
-        hash = 89 * hash + Objects.hashCode(this.title);
-        hash = 89 * hash + Objects.hashCode(this.pages);
-        hash = 89 * hash + Objects.hashCode(this.plublisher);
-        hash = 89 * hash + Objects.hashCode(this.country_publishing);
-        hash = 89 * hash + Objects.hashCode(this.date_publishing);
-        hash = 89 * hash + Objects.hashCode(this.format);
-        hash = 89 * hash + Objects.hashCode(this.cover);
-        hash = 89 * hash + Objects.hashCode(this.isbn);
-        hash = 89 * hash + Objects.hashCode(this.edition);
-        hash = 89 * hash + Objects.hashCode(this.colection);
-        hash = 89 * hash + Objects.hashCode(this.language);
+        int hash = 3;
+        hash = 37 * hash + Objects.hashCode(this.title);
+        hash = 37 * hash + Objects.hashCode(this.subtitle);
+        hash = 37 * hash + Objects.hashCode(this.pages);
+        hash = 37 * hash + Objects.hashCode(this.publisher);
+        hash = 37 * hash + Objects.hashCode(this.country_publishing);
+        hash = 37 * hash + Objects.hashCode(this.date_publishing);
+        hash = 37 * hash + Objects.hashCode(this.format);
+        hash = 37 * hash + Objects.hashCode(this.cover);
+        hash = 37 * hash + Objects.hashCode(this.isbn);
+        hash = 37 * hash + Objects.hashCode(this.edition);
+        hash = 37 * hash + Objects.hashCode(this.colection);
+        hash = 37 * hash + Objects.hashCode(this.language);
         return hash;
     }
 
@@ -187,7 +200,10 @@ public class Book_Edition extends Book {
         if (!Objects.equals(this.title, other.title)) {
             return false;
         }
-        if (!Objects.equals(this.plublisher, other.plublisher)) {
+        if (!Objects.equals(this.subtitle, other.subtitle)) {
+            return false;
+        }
+        if (!Objects.equals(this.publisher, other.publisher)) {
             return false;
         }
         if (!Objects.equals(this.country_publishing, other.country_publishing)) {
@@ -217,8 +233,13 @@ public class Book_Edition extends Book {
         if (!Objects.equals(this.edition, other.edition)) {
             return false;
         }
+         if (!super.equals(obj)) {
+            return false;
+        }
         return true;
     }
+
+    
 
     
     
@@ -226,11 +247,8 @@ public class Book_Edition extends Book {
 
     @Override
     public String toString() {
-        return "Book_Edition{" + "title=" + title + ", pages=" + pages + ", plublisher=" + plublisher + ", country_publishing=" + country_publishing + ", date_publishing=" + date_publishing + ", format=" + format + ", cover=" + cover + ", isbn=" + isbn + ", edition=" + edition + ", colection=" + colection + ", language=" + language + '}';
+        return "Book_Edition{" + super.toString()+"title=" + title + ", subtitle=" + subtitle + ", pages=" + pages + ", plublisher=" + publisher + ", country_publishing=" + country_publishing + ", date_publishing=" + date_publishing + ", format=" + format + ", cover=" + cover + ", isbn=" + isbn + ", edition=" + edition + ", colection=" + colection + ", language=" + language + '}';
     }
 
-    
-    
-    
     
 }

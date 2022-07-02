@@ -10,6 +10,6 @@ package proyecto01;
  */
 public enum FORMAT {
     
-    PAPERBANK, HARDCOVER, EBOOK, AUDIO
+    PAPERBANK, HARDCOVER, POCKETBOOK, EBOOK, AUDIO, NULL
     
 }

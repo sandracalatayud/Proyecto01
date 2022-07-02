@@ -17,7 +17,7 @@ public class Book {
     /* ATRIBUTOS */
     
     private String title_original;
-    private String subtitle;
+    private String subtitle_original;
     private String author;
     private String country_original_publishing;
     private String date_original_publishing;
@@ -34,7 +34,7 @@ public class Book {
 
     public Book(String title_original, String subtitle, String author, String country_original_publishing, String date_original_publishing, String original_languaje, String series, Integer num_series, String sinopsis, AUTHOR_GENRE genre) {
         this.title_original = title_original;
-        this.subtitle = subtitle;
+        this.subtitle_original = subtitle;
         this.author = author;
         this.country_original_publishing = country_original_publishing;
         this.date_original_publishing = date_original_publishing;
@@ -50,84 +50,84 @@ public class Book {
     /* GETTERS AND SETTERS */
     
     
-    private String getTitle_original() {
+    public String getTitle_original() {
         return this.title_original;
     }
     
-    private void setTitle_original(String title_original) {
+    public void setTitle_original(String title_original) {
         this.title_original = title_original;
     }
     
-    private String getSubtitle() {
-        return this.subtitle;
+    public String getSubtitle_original() {
+        return this.subtitle_original;
     }
     
-    private void setSubtitle(String subtitle) {
-        this.subtitle = subtitle;
+    public void setSubtitle_original(String subtitle_original) {
+        this.subtitle_original = subtitle_original;
     }
     
-    private String getAuthor() {
+    public String getAuthor() {
         return this.author;
     }
     
-    private void setAuthor(String author) {
+    public void setAuthor(String author) {
         this.author = author;
     }
     
 
-    private String getCountry_original_publishing() {
+    public String getCountry_original_publishing() {
         return this.country_original_publishing;
     }
     
     
-    private void setCountry_original_publishing(String country_original_publishing) {
+    public void setCountry_original_publishing(String country_original_publishing) {
         this.country_original_publishing = country_original_publishing;
     }
     
     
-    private String getDate_original_publishing() {
+    public String getDate_original_publishing() {
         return this.date_original_publishing;
     }
     
    
-    private void setDate_original_publishing(String date_original_publishing) {
+    public void setDate_original_publishing(String date_original_publishing) {
         this.date_original_publishing = date_original_publishing;
     }
     
-    private String getOriginal_languaje() {
+    public String getOriginal_languaje() {
         return this.original_languaje;
     }
     
     
-    private void setOriginal_languaje(String original_languaje) {
+    public void setOriginal_languaje(String original_languaje) {
         this.original_languaje = original_languaje;
     }
     
     
-    private String getSeries() {
+    public String getSeries() {
         return this.series;
     }
     
     
-    private void setSeries(String series) {
+    public void setSeries(String series) {
         this.series = series;
     }
    
-    private Integer getNum_series() {
+    public Integer getNum_series() {
         return this.num_series;
     }
     
-    private void setNum_series(Integer num_series) {
+    public void setNum_series(Integer num_series) {
         this.num_series = num_series;
     }
     
    
-    private String getSinopsis() {
+    public String getSinopsis() {
         return this.sinopsis;
     }
     
     
-    private void setSinopsis(String sinopsis) {
+    public void setSinopsis(String sinopsis) {
         this.sinopsis = sinopsis;
     }
 
@@ -147,7 +147,7 @@ public class Book {
     public int hashCode() {
         int hash = 7;
         hash = 97 * hash + Objects.hashCode(this.title_original);
-        hash = 97 * hash + Objects.hashCode(this.subtitle);
+        hash = 97 * hash + Objects.hashCode(this.subtitle_original);
         hash = 97 * hash + Objects.hashCode(this.author);
         hash = 97 * hash + Objects.hashCode(this.country_original_publishing);
         hash = 97 * hash + Objects.hashCode(this.date_original_publishing);
@@ -174,7 +174,7 @@ public class Book {
         if (!Objects.equals(this.title_original, other.title_original)) {
             return false;
         }
-        if (!Objects.equals(this.subtitle, other.subtitle)) {
+        if (!Objects.equals(this.subtitle_original, other.subtitle_original)) {
             return false;
         }
         if (!Objects.equals(this.author, other.author)) {
@@ -211,7 +211,7 @@ public class Book {
 
     @Override
     public String toString() {
-        return "Book{" + "title_original=" + title_original + ", subtitle=" + subtitle + ", author=" + author + ", country_original_publishing=" + country_original_publishing + ", date_original_publishing=" + date_original_publishing + ", original_languaje=" + original_languaje + ", series=" + series + ", num_series=" + num_series + ", sinopsis=" + sinopsis + ", genre=" + genre + '}';
+        return "Book{" + "title_original=" + title_original + ", subtitle=" + subtitle_original + ", author=" + author + ", country_original_publishing=" + country_original_publishing + ", date_original_publishing=" + date_original_publishing + ", original_languaje=" + original_languaje + ", series=" + series + ", num_series=" + num_series + ", sinopsis=" + sinopsis + ", genre=" + genre + '}';
     }
 
     

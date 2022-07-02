@@ -20,11 +20,11 @@
             </Label>
          </top>
          <center>
-            <ScrollPane BorderPane.alignment="CENTER">
+            <ScrollPane vmax="2.0" BorderPane.alignment="CENTER">
               <content>
-                <AnchorPane prefHeight="740.0" prefWidth="761.0">
+                <AnchorPane>
                      <children>
-                        <GridPane prefHeight="861.0" prefWidth="963.0" AnchorPane.topAnchor="30.0">
+                        <GridPane prefHeight="1074.0" prefWidth="963.0" AnchorPane.topAnchor="30.0">
                           <columnConstraints>
                             <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" prefWidth="100.0" />
                               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -50,8 +50,16 @@
                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                               <RowConstraints minHeight="10.0" prefHeight="150.0" vgrow="SOMETIMES" />
                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="250.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="250.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="250.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="250.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="250.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="250.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                           </rowConstraints>
                            <children>
                               <Label text="Título* :">
@@ -84,82 +92,82 @@
                                     <Insets right="10.0" />
                                  </GridPane.margin>
                               </Label>
-                              <Label text="País de publicación :" GridPane.rowIndex="6">
+                              <Label text="País de publicación :" GridPane.rowIndex="7">
                                  <GridPane.margin>
                                     <Insets right="10.0" />
                                  </GridPane.margin>
                               </Label>
-                              <Label text="Fecha de publicación :" GridPane.rowIndex="7">
+                              <Label text="Fecha de publicación :" GridPane.rowIndex="8">
                                  <GridPane.margin>
                                     <Insets right="10.0" />
                                  </GridPane.margin>
                               </Label>
-                              <Label text="Formato* :" GridPane.rowIndex="8">
+                              <Label text="Formato* :" GridPane.rowIndex="9">
                                  <GridPane.margin>
                                     <Insets right="10.0" />
                                  </GridPane.margin>
                               </Label>
-                              <Label text="ISBN* :" GridPane.rowIndex="9">
+                              <Label text="ISBN* :" GridPane.rowIndex="10">
                                  <GridPane.margin>
                                     <Insets right="10.0" />
                                  </GridPane.margin>
                               </Label>
-                              <Label text="Colección :" GridPane.rowIndex="10">
+                              <Label text="Colección :" GridPane.rowIndex="11">
                                  <GridPane.margin>
                                     <Insets right="10.0" />
                                  </GridPane.margin>
                               </Label>
-                              <Label text="Idioma :" GridPane.rowIndex="11">
+                              <Label text="Idioma :" GridPane.rowIndex="12">
                                  <GridPane.margin>
                                     <Insets right="10.0" />
                                  </GridPane.margin>
                               </Label>
-                              <Label text="Portada :" GridPane.rowIndex="12">
+                              <Label text="Portada :" GridPane.rowIndex="13">
                                  <GridPane.margin>
                                     <Insets right="10.0" />
                                  </GridPane.margin>
                               </Label>
-                              <Label lineSpacing="3.0" text="¿Tienes este libro en tu biblioteca?  " textAlignment="CENTER" wrapText="true" GridPane.rowIndex="21">
+                              <Label lineSpacing="3.0" text="¿Tienes este libro en tu biblioteca?  " textAlignment="CENTER" wrapText="true" GridPane.rowIndex="22">
                                  <GridPane.margin>
                                     <Insets right="10.0" />
                                  </GridPane.margin>
                               </Label>
-                              <Label text="Título original :" GridPane.rowIndex="13">
+                              <Label text="Título original :" GridPane.rowIndex="14">
                                  <GridPane.margin>
                                     <Insets right="10.0" />
                                  </GridPane.margin>
                               </Label>
-                              <Label text="Subtítulo original :" GridPane.rowIndex="14">
+                              <Label text="Subtítulo original :" GridPane.rowIndex="15">
                                  <GridPane.margin>
                                     <Insets right="10.0" />
                                  </GridPane.margin>
                               </Label>
-                              <Label text="País original de publicación :" GridPane.rowIndex="15">
+                              <Label text="País original de publicación :" GridPane.rowIndex="16">
                                  <GridPane.margin>
                                     <Insets right="10.0" />
                                  </GridPane.margin>
                               </Label>
-                              <Label text="Fecha original de publicación :" GridPane.rowIndex="16">
+                              <Label text="Fecha original de publicación :" GridPane.rowIndex="17">
                                  <GridPane.margin>
                                     <Insets right="10.0" />
                                  </GridPane.margin>
                               </Label>
-                              <Label text="Idioma original :" GridPane.rowIndex="17">
+                              <Label text="Idioma original :" GridPane.rowIndex="18">
                                  <GridPane.margin>
                                     <Insets right="10.0" />
                                  </GridPane.margin>
                               </Label>
-                              <Label text="Saga :" GridPane.rowIndex="18">
+                              <Label text="Saga :" GridPane.rowIndex="19">
                                  <GridPane.margin>
                                     <Insets right="10.0" />
                                  </GridPane.margin>
                               </Label>
-                              <Label text="Número en la saga :" GridPane.rowIndex="19">
+                              <Label text="Número en la saga :" GridPane.rowIndex="20">
                                  <GridPane.margin>
                                     <Insets right="10.0" />
                                  </GridPane.margin>
                               </Label>
-                              <Label text="Sinopsis :" GridPane.rowIndex="20">
+                              <Label text="Sinopsis :" GridPane.rowIndex="21">
                                  <GridPane.margin>
                                     <Insets right="10.0" />
                                  </GridPane.margin>
@@ -189,34 +197,34 @@
                                     <Insets right="150.0" />
                                  </GridPane.margin>
                               </TextField>
-                              <TextField fx:id="tfFecha" maxWidth="100.0" promptText="01/01/1970" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                              <TextField fx:id="tfFecha" maxWidth="100.0" promptText="01/01/1970" GridPane.columnIndex="1" GridPane.rowIndex="8">
                                  <GridPane.margin>
                                     <Insets />
                                  </GridPane.margin>
                               </TextField>
-                              <TextField fx:id="tfIsbn" maxWidth="300.0" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                              <TextField fx:id="tfIsbn" maxWidth="300.0" GridPane.columnIndex="1" GridPane.rowIndex="10">
                                  <GridPane.margin>
                                     <Insets right="150.0" />
                                  </GridPane.margin>
                               </TextField>
-                              <TextField fx:id="tfColeccion" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                              <TextField fx:id="tfColeccion" GridPane.columnIndex="1" GridPane.rowIndex="11">
                                  <GridPane.margin>
                                     <Insets right="150.0" />
                                  </GridPane.margin>
                               </TextField>
-                              <TextField fx:id="tfTituloOriginal" GridPane.columnIndex="1" GridPane.rowIndex="13">
+                              <TextField fx:id="tfTituloOriginal" GridPane.columnIndex="1" GridPane.rowIndex="14">
                                  <GridPane.margin>
                                     <Insets right="150.0" />
                                  </GridPane.margin>
                               </TextField>
-                              <TextField fx:id="tfSubtituloOriginal" GridPane.columnIndex="1" GridPane.rowIndex="14">
+                              <TextField fx:id="tfSubtituloOriginal" GridPane.columnIndex="1" GridPane.rowIndex="15">
                                  <GridPane.margin>
                                     <Insets right="150.0" />
                                  </GridPane.margin>
                               </TextField>
                               <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
                                  <children>
-                                    <RadioButton fx:id="rbMujer" mnemonicParsing="false" text="Mujer">
+                                    <RadioButton id="FEMALE" fx:id="rbMujer" mnemonicParsing="false" text="Mujer">
                                        <padding>
                                           <Insets top="8.0" />
                                        </padding>
@@ -224,49 +232,48 @@
                                           <ToggleGroup fx:id="tgGenero" />
                                        </toggleGroup>
                                     </RadioButton>
-                                    <RadioButton fx:id="rbHombre" mnemonicParsing="false" text="Hombre" toggleGroup="$tgGenero">
+                                    <RadioButton id="MALE" fx:id="rbHombre" mnemonicParsing="false" text="Hombre" toggleGroup="$tgGenero">
                                        <padding>
                                           <Insets top="8.0" />
                                        </padding>
                                     </RadioButton>
-                                    <RadioButton fx:id="rbNoBinario" mnemonicParsing="false" text="No Binario" toggleGroup="$tgGenero">
+                                    <RadioButton id="NONBINARY" fx:id="rbNoBinario" mnemonicParsing="false" text="No Binario" toggleGroup="$tgGenero">
                                        <padding>
                                           <Insets top="8.0" />
                                        </padding>
                                     </RadioButton>
-                                    <RadioButton fx:id="rbOtro" mnemonicParsing="false" text="Otro" toggleGroup="$tgGenero">
+                                    <RadioButton id="OTHER" fx:id="rbOtro" mnemonicParsing="false" text="Otro" toggleGroup="$tgGenero">
                                        <padding>
                                           <Insets top="8.0" />
                                        </padding>
                                     </RadioButton>
-                                    <RadioButton fx:id="rbVarios" mnemonicParsing="false" text="Varios" toggleGroup="$tgGenero">
+                                    <RadioButton id="SEVERAL" fx:id="rbVarios" mnemonicParsing="false" text="Varios" toggleGroup="$tgGenero">
                                        <HBox.margin>
                                           <Insets top="8.0" />
                                        </HBox.margin>
                                     </RadioButton>
                                  </children>
                               </HBox>
-                              <ComboBox fx:id="cbFormato" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
-                              <ComboBox fx:id="cbIdioma" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="11" />
-                              <TextField layoutX="260.0" layoutY="319.0" GridPane.columnIndex="1" GridPane.rowIndex="12">
+                              <ComboBox fx:id="cbIdioma" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                              <TextField fx:id="tfPortada" layoutX="260.0" layoutY="319.0" GridPane.columnIndex="1" GridPane.rowIndex="13">
                                  <GridPane.margin>
                                     <Insets right="150.0" />
                                  </GridPane.margin>
                               </TextField>
-                              <TextField fx:id="tfFechaOriginal" layoutX="260.0" layoutY="229.0" maxWidth="100.0" promptText="01/01/1970" GridPane.columnIndex="1" GridPane.rowIndex="16" />
-                              <ComboBox fx:id="cbIdiomaOriginal" layoutX="260.0" layoutY="349.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="17" />
-                              <TextField fx:id="tfSaga" layoutX="260.0" layoutY="379.0" GridPane.columnIndex="1" GridPane.rowIndex="18">
+                              <TextField fx:id="tfFechaOriginal" layoutX="260.0" layoutY="229.0" maxWidth="100.0" promptText="01/01/1970" GridPane.columnIndex="1" GridPane.rowIndex="17" />
+                              <ComboBox fx:id="cbIdiomaOriginal" layoutX="260.0" layoutY="349.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="18" />
+                              <TextField fx:id="tfSaga" layoutX="260.0" layoutY="379.0" GridPane.columnIndex="1" GridPane.rowIndex="19">
                                  <GridPane.margin>
                                     <Insets right="150.0" />
                                  </GridPane.margin>
                               </TextField>
-                              <TextField fx:id="tfNumSaga" layoutX="260.0" layoutY="559.0" maxWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="19" />
-                              <TextArea fx:id="taSinopsis" maxHeight="150.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="20">
+                              <TextField fx:id="tfNumSaga" layoutX="260.0" layoutY="559.0" maxWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="20" />
+                              <TextArea fx:id="taSinopsis" maxHeight="150.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="21">
                                  <GridPane.margin>
                                     <Insets right="150.0" />
                                  </GridPane.margin>
                               </TextArea>
-                              <HBox prefHeight="100.0" prefWidth="200.0" spacing="15.0" GridPane.columnIndex="1" GridPane.rowIndex="21">
+                              <HBox prefHeight="100.0" prefWidth="200.0" spacing="15.0" GridPane.columnIndex="1" GridPane.rowIndex="22">
                                  <children>
                                     <RadioButton fx:id="rbSi" mnemonicParsing="false" text="Sí">
                                        <toggleGroup>
@@ -283,8 +290,119 @@
                                     </RadioButton>
                                  </children>
                               </HBox>
-                              <ComboBox fx:id="cbPais" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-                              <ComboBox fx:id="cbPaisOriginal" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+                              <ComboBox fx:id="cbPais" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                              <ComboBox fx:id="cbPaisOriginal" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="16" />
+                              <TextField fx:id="tfLugarAdquisicion" maxWidth="300.0" GridPane.columnIndex="1" GridPane.rowIndex="25" />
+                              <TextField fx:id="tfFechaAdquisicion" maxWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="24" />
+                              <TextField fx:id="tfCompradoEn" maxWidth="300.0" GridPane.columnIndex="1" GridPane.rowIndex="26" />
+                              <Label text="Fecha de adquisición :" GridPane.rowIndex="24">
+                                 <GridPane.margin>
+                                    <Insets right="10.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label text="Lugar donde lo adquiriste :" GridPane.rowIndex="25">
+                                 <GridPane.margin>
+                                    <Insets right="10.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label text="Comprado en :" GridPane.rowIndex="26">
+                                 <GridPane.margin>
+                                    <Insets right="10.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label text="Estado :" GridPane.rowIndex="23">
+                                 <GridPane.margin>
+                                    <Insets right="10.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0" GridPane.columnIndex="1" GridPane.rowIndex="23">
+                                 <children>
+                                    <RadioButton id="OWNED" fx:id="rbOwned" mnemonicParsing="false" text="Lo tengo">
+                                       <padding>
+                                          <Insets top="8.0" />
+                                       </padding>
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="tgEstado" />
+                                       </toggleGroup>
+                                    </RadioButton>
+                                    <RadioButton id="DONATED" fx:id="rbDonated" mnemonicParsing="false" text="Donado" toggleGroup="$tgEstado">
+                                       <padding>
+                                          <Insets top="8.0" />
+                                       </padding>
+                                    </RadioButton>
+                                    <RadioButton id="SOLD" fx:id="rbSold" mnemonicParsing="false" text="Vendido" toggleGroup="$tgEstado">
+                                       <padding>
+                                          <Insets top="8.0" />
+                                       </padding>
+                                    </RadioButton>
+                                    <RadioButton id="BORROWED" fx:id="rbBorrowed" mnemonicParsing="false" text="Lo he prestado" toggleGroup="$tgEstado">
+                                       <padding>
+                                          <Insets top="8.0" />
+                                       </padding>
+                                    </RadioButton>
+                                    <RadioButton id="LOANED" fx:id="rbLoaned" mnemonicParsing="false" text="Me lo han prestado" toggleGroup="$tgEstado">
+                                       <padding>
+                                          <Insets top="8.0" />
+                                       </padding>
+                                    </RadioButton>
+                                 </children>
+                              </HBox>
+                              <Label text="Regalado por :" GridPane.rowIndex="27">
+                                 <GridPane.margin>
+                                    <Insets right="10.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label text="Se lo presté a :" GridPane.rowIndex="28">
+                                 <GridPane.margin>
+                                    <Insets right="10.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label text="Me lo prestó :" GridPane.rowIndex="29">
+                                 <GridPane.margin>
+                                    <Insets right="10.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <TextField fx:id="tfRegaladoPor" maxWidth="300.0" GridPane.columnIndex="1" GridPane.rowIndex="27" />
+                              <TextField fx:id="tfBorrowTo" maxWidth="300.0" GridPane.columnIndex="1" GridPane.rowIndex="28" />
+                              <TextField fx:id="tfLoanBy" maxWidth="300.0" GridPane.columnIndex="1" GridPane.rowIndex="29" />
+                              <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                                 <children>
+                                    <RadioButton id="HARDCOVER" fx:id="rbTapaDura" mnemonicParsing="false" text="Tapa dura">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="tgFormato" />
+                                       </toggleGroup>
+                                       <HBox.margin>
+                                          <Insets top="8.0" />
+                                       </HBox.margin>
+                                    </RadioButton>
+                                    <RadioButton id="PAPERBANK" fx:id="rbRustica" mnemonicParsing="false" text="Rústica" toggleGroup="$tgFormato">
+                                       <HBox.margin>
+                                          <Insets top="8.0" />
+                                       </HBox.margin>
+                                    </RadioButton>
+                                    <RadioButton id="POCKETBOOK" fx:id="rbBolsillo" mnemonicParsing="false" text="Bolsillo" toggleGroup="$tgFormato">
+                                       <HBox.margin>
+                                          <Insets top="8.0" />
+                                       </HBox.margin>
+                                    </RadioButton>
+                                    <RadioButton id="EBOOK" fx:id="rbElectronico" mnemonicParsing="false" text="Electrónico" toggleGroup="$tgFormato">
+                                       <HBox.margin>
+                                          <Insets top="8.0" />
+                                       </HBox.margin>
+                                    </RadioButton>
+                                    <RadioButton id="AUDIO" fx:id="rbAudiolibro" lineSpacing="20.0" mnemonicParsing="false" text="Audiolibro" toggleGroup="$tgFormato">
+                                       <HBox.margin>
+                                          <Insets top="8.0" />
+                                       </HBox.margin>
+                                    </RadioButton>
+                                 </children>
+                              </HBox>
+                              <Label text="Edición nº :" GridPane.rowIndex="6">
+                                 <GridPane.margin>
+                                    <Insets right="10.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <TextField fx:id="tfEdicion" maxWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
                            </children>
                         </GridPane>
                      </children>

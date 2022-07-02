@@ -21,8 +21,11 @@ public class Book_Copy extends Book_Edition {
     
     /* CONSTRUCTORES */
 
-    public Book_Copy(String bought_in, String gifted_by, String date_adquisition, String location, STATUS status, String borrow_to, String loaned_by, String title, Integer pages, String plublisher, String country_publishing, String date_publishing, FORMAT format, String cover, String isbn, Integer edition, String colection, String language, String title_original, String subtitle, String author, String country_original_publishing, String date_original_publishing, String original_languaje, String series, Integer num_series, String sinopsis, AUTHOR_GENRE genre) {
-        super(title, pages, plublisher, country_publishing, date_publishing, format, cover, isbn, edition, colection, language, title_original, subtitle, author, country_original_publishing, date_original_publishing, original_languaje, series, num_series, sinopsis, genre);
+    public Book_Copy(String bought_in, String gifted_by, String date_adquisition, String location, STATUS status, String borrow_to, String loaned_by, 
+            String title, String subtitle, Integer pages, String plublisher, String country_publishing, String date_publishing, FORMAT format, String cover, 
+            String isbn, Integer edition, String colection, String language, String title_original, String subtitle_original, String author, String country_original_publishing, 
+            String date_original_publishing, String original_languaje, String series, Integer num_series, String sinopsis, AUTHOR_GENRE genre) {
+        super(title, subtitle, pages, plublisher, country_publishing, date_publishing, format, cover, isbn, edition, colection, language, title_original, subtitle_original, author, country_original_publishing, date_original_publishing, original_languaje, series, num_series, sinopsis, genre);
         this.bought_in = bought_in;
         this.gifted_by = gifted_by;
         this.date_adquisition = date_adquisition;
@@ -117,13 +120,13 @@ public class Book_Copy extends Book_Edition {
     @Override
     public int hashCode() {
         int hash = 7;
-        hash = 59 * hash + Objects.hashCode(this.bought_in);
-        hash = 59 * hash + Objects.hashCode(this.gifted_by);
-        hash = 59 * hash + Objects.hashCode(this.date_adquisition);
-        hash = 59 * hash + Objects.hashCode(this.location);
-        hash = 59 * hash + Objects.hashCode(this.status);
-        hash = 59 * hash + Objects.hashCode(this.borrow_to);
-        hash = 59 * hash + Objects.hashCode(this.loaned_by);
+        hash = 79 * hash + Objects.hashCode(this.bought_in);
+        hash = 79 * hash + Objects.hashCode(this.gifted_by);
+        hash = 79 * hash + Objects.hashCode(this.date_adquisition);
+        hash = 79 * hash + Objects.hashCode(this.location);
+        hash = 79 * hash + Objects.hashCode(this.status);
+        hash = 79 * hash + Objects.hashCode(this.borrow_to);
+        hash = 79 * hash + Objects.hashCode(this.loaned_by);
         return hash;
     }
 
@@ -165,13 +168,17 @@ public class Book_Copy extends Book_Edition {
         }
         return true;
     }
+
+    
     
     /* TO STRING */
 
     @Override
     public String toString() {
-        return "Book_Copy{" + "bought_in=" + bought_in + ", gifted_by=" + gifted_by + ", date_adquisition=" + date_adquisition + ", location=" + location + ", status=" + status + ", borrow_to=" + borrow_to + ", loaned_by=" + loaned_by + '}';
+        return "Book_Copy{" + super.toString()+"bought_in=" + bought_in + ", gifted_by=" + gifted_by + ", date_adquisition=" + date_adquisition + ", location=" + location + ", status=" + status + ", borrow_to=" + borrow_to + ", loaned_by=" + loaned_by + '}';
     }
+
+    
     
     
     

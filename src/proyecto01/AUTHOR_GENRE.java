@@ -10,6 +10,6 @@ package proyecto01;
  */
 public enum AUTHOR_GENRE {
     
-    MALE, FEMALE, NONBINARY, OTHER, SEVERAL
+    MALE, FEMALE, NONBINARY, OTHER, SEVERAL, NULL
     
 }

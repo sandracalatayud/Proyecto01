@@ -10,6 +10,6 @@ package proyecto01;
  */
 public enum STATUS {
     
-    OWNED, DONATED, SOLD, BORROWED, LOANED
+    OWNED, DONATED, SOLD, BORROWED, LOANED, NULL
     
 }
